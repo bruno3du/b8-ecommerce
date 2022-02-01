@@ -89,17 +89,18 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 12px;
-	position: absolute;
+	position: relative;
 }
 
 header > div.header__logo {
 	margin-right: 50px;
 	margin-left: 30px;
+	cursor: pointer;
 }
 header > div.header__search {
+	position: relative;
 	width: 100%;
 	max-width: 900px;
-	display: flex;
 }
 header > div.header__search > input {
 	width: 100%;
@@ -107,8 +108,10 @@ header > div.header__search > input {
 }
 
 header > div.header__search > img {
-	margin-left: -45px;
-	stroke: #e36305;
+	position: absolute;
+	top: 20%;
+	right: 15px;
+	cursor: pointer;
 }
 
 header > div.header__search > input::placeholder {
@@ -130,4 +133,24 @@ header > nav > button {
 	align-items: center;
 	gap: 10px;
 	font-weight: 700;
+}
+
+.menu {
+	background: var(--black-800);
+	height: 48px;
+	width: 100vw;
+}
+
+.menu ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 32px;
+	height: inherit;
+}
+
+.menu__item {
+	color: var(--white);
+	cursor: pointer;
 }
