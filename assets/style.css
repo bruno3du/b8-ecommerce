@@ -29,11 +29,17 @@
 	--white: #ffffff;
 
 	/* Font */
-	--font-inter: 'Inter', sans-serif;
+	--font-standard: 'Inter', sans-serif;
+}
+
+p,
+span,
+li {
+	font-weight: 500;
 }
 
 body {
-	font-family: 'Inter', sans-serif;
+	font-family: var(--font-standard);
 }
 
 h1,
@@ -153,4 +159,33 @@ header > nav > button {
 .menu__item {
 	color: var(--white);
 	cursor: pointer;
+}
+
+.breadcrumb {
+	padding: 12px 32px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid var(--gray-100);
+}
+
+.breadcrumb__item {
+	color: var(--gray-600);
+	cursor: pointer;
+}
+
+.breadcrumb__item--actived {
+	color: var(--orange-500);
+}
+
+.introduceProduct {
+	display: flex;
+	height: 580px;
+}
+
+.introduceProduct__image {
+	flex: 1;
+}
+
+.introduceProduct__info {
+	flex: 1;
 }
