@@ -1,3 +1,5 @@
+/** @format */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -5,38 +7,43 @@
 }
 
 :root {
-  /* Colors */
-  --green-800: #008F00;
-  --green-700: #2D8A44;
-  --green-600: #40B25C;
-  --green-400: #53CC71;
-  --green-50: #E1E7FA;
-  --brown-700: #80351D;
-  --blue-50: #DAF4CD;
-  --orange-500: #E36305;
-  --pink-500:#FF8861;
-  --pink-300: #FFA688;
-  --pink-100: #F6CBCB;
-  --bage-100: #FFFFD8;
-  --yellow-100:#FFEA7D;
-  --red-600: #E63737;
-  --black-800: #030303;
-  --gray-600: #40464D;
-  --gray-200: #CFD1D2;
-  --gray-100: #E9E9E9;
-  --white: #FFFFFF;
+	/* Colors */
+	--green-800: #008f00;
+	--green-700: #2d8a44;
+	--green-600: #40b25c;
+	--green-400: #53cc71;
+	--green-50: #e1e7fa;
+	--brown-700: #80351d;
+	--blue-50: #daf4cd;
+	--orange-500: #e36305;
+	--pink-500: #ff8861;
+	--pink-300: #ffa688;
+	--pink-100: #f6cbcb;
+	--bage-100: #ffffd8;
+	--yellow-100: #ffea7d;
+	--red-600: #e63737;
+	--black-800: #030303;
+	--gray-600: #40464d;
+	--gray-200: #cfd1d2;
+	--gray-100: #e9e9e9;
+	--white: #ffffff;
 
-  /* Font */
-  --font-inter: 'Inter', sans-serif;
+	/* Font */
+	--font-inter: 'Inter', sans-serif;
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Inter', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #101820;
-  font-weight: 600;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #101820;
+	font-weight: 600;
 }
 
 body,
@@ -44,16 +51,19 @@ input,
 textarea,
 select,
 button {
-	font: 400, 1rem, 'Roboto', sans-serif;
+	font: 400, 1rem, 'Inter', sans-serif;
 }
 
 input {
-  padding: 12px 20px;
+	padding: 12px 20px;
+	border-radius: 4px;
+	border: 1px solid #9fa3a6;
 }
-
 
 button {
 	cursor: pointer;
+	border: none;
+	background-color: transparent;
 }
 
 a {
@@ -71,4 +81,53 @@ a {
 	html {
 		font-size: 87.5%;
 	}
+}
+
+header {
+	display: flex;
+	width: 100vw;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px;
+	position: absolute;
+}
+
+header > div.header__logo {
+	margin-right: 50px;
+	margin-left: 30px;
+}
+header > div.header__search {
+	width: 100%;
+	max-width: 900px;
+	display: flex;
+}
+header > div.header__search > input {
+	width: 100%;
+	height: 48px;
+}
+
+header > div.header__search > img {
+	margin-left: -45px;
+	stroke: #e36305;
+}
+
+header > div.header__search > input::placeholder {
+	font-weight: 500;
+	color: #40464d;
+	font-size: 1rem;
+}
+
+header > nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header > nav > button {
+	padding: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	font-weight: 700;
 }
