@@ -538,3 +538,29 @@ a {
 	font-size: 14px;
 	margin-top: 4px;
 }
+.banner {
+	width: calc(100% - 64px);
+	margin: 0 auto;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.banner img {
+	width: 100%;
+}
+
+.banner--arrowLeft {
+	position: absolute;
+	left: 16px;
+	top: 50%;
+	transform: translateY(-40%);
+	cursor: pointer;
+}
+
+.banner--arrowRight {
+	position: absolute;
+	right: 16px;
+	top: 50%;
+	transform: translateY(-40%);
+	cursor: pointer;
+}
