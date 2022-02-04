@@ -6,12 +6,6 @@
 	box-sizing: border-box;
 }
 
-html {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 :root {
 	/* Colors */
 	--green-800: #008f00;
