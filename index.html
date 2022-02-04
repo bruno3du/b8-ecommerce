@@ -30,7 +30,7 @@
 				<img src="./assets/icons/heart.svg" alt="wishlist-icon" />
 				WISHLIST
 			</button>
-			<button><img src="./assets/icons/bag.svg" alt="carrinho" /></button>
+			<button class="header-carrinho"><img src="./assets/icons/bag.svg" alt="carrinho" /><div id="numberProduct-cart">0</div></button>
 		</nav>
 	</header>
 	<main>
@@ -120,11 +120,11 @@
 							</div>
 							<div class="introduceProduct__card__amount">
 								<div class="introduceProduct__amount__selectAmount">
-									<button>
+									<button onclick="removeItem()">
 										<img src="./assets/icons/minus.svg" alt="remover um item" />
 									</button>
-									<span>01</span>
-									<button>
+									<span id="amountItem">1</span>
+									<button onclick="addItem()">
 										<img src="./assets/icons/plus.svg" alt="adicionar um item" />
 									</button>
 								</div>
@@ -134,7 +134,7 @@
 								</div>
 							</div>
 							<div class="introduceProduct__buttons">
-								<button id="addToCard">ADD TO CARD</button>
+								<button id="addToCard" onclick="addToCard()">ADD TO CARD</button>
 								<button id="buyNow">
 									<img src="./assets/icons/bag-buy.svg" alt="compra" /> BUY
 									NOW
