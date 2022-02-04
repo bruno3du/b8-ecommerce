@@ -740,3 +740,59 @@ footer {
 	text-decoration: none;
 	color: var(--white);
 }
+
+.footer-divisor {
+	margin-top: 46px;
+	margin-bottom: 63px;
+	
+	border: 1px solid #FFFFFF;
+	opacity: 0.16;
+}
+
+.footer-redes-bandeiras {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 32px;
+}
+
+.redes-sociais {
+	width: 300px;
+	display: flex;
+
+	gap: 32px;
+}
+
+.redes-sociais img{
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+}
+
+.footer-text {
+	font-size: 12px;
+	text-align: center;
+	max-width: 1028px;
+	margin: 64px auto 32px auto;
+}
+
+.footer-text-copy {
+	margin-bottom: 12px;
+	font-weight: 600;
+}
+
+.footer-text-content {
+	color: var(--gray-200);
+}
+
+.footer-madeWith {
+	color: var(--gray-600);
+	display: flex;
+	font-size: 12px;
+	font-weight: 600;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
